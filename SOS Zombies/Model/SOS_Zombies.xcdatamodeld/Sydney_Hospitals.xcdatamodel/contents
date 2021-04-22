@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Hospital" representedClassName="Hospital" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="queue" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QueueEntry" inverseName="hospital" inverseEntity="QueueEntry"/>
+    </entity>
+    <entity name="Illness" representedClassName="Illness" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="registrations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Registration" inverseName="illness" inverseEntity="Registration"/>
+    </entity>
+    <entity name="QueueEntry" representedClassName="QueueEntry" syncable="YES">
+        <attribute name="painLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="patientCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="processTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="hospital" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hospital" inverseName="queue" inverseEntity="Hospital"/>
+    </entity>
+    <entity name="Registration" representedClassName="Registration" syncable="YES">
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="painLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="illness" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Illness" inverseName="registrations" inverseEntity="Illness"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="registrations" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="insuranceID" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="registrations" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Registration" inverseName="user" inverseEntity="Registration"/>
+    </entity>
+    <elements>
+        <element name="Hospital" positionX="-54" positionY="9" width="128" height="104"/>
+        <element name="Illness" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="QueueEntry" positionX="-36" positionY="27" width="128" height="89"/>
+        <element name="Registration" positionX="-27" positionY="54" width="128" height="89"/>
+        <element name="User" positionX="-36" positionY="45" width="128" height="74"/>
+    </elements>
+</model>

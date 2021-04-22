@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  SOS Zombies
+
+  Created by Achref Marzouki on 21/4/21.
+  
+*/
+
+// MARK: - General
+"general.days" = "jour(s)";
+"general.hours" = "heure(s)";
+"general.minutes" = "min(s)";
+"general.cancel" = "Annuler";
+"general.pastTime" = "Il y a %@";
+"general.warning" = "Attention";
+"general.ok" = "OK";
+"general.dontShowAgain" = "Ne plus afficher";
+"general.continue" = "Continuer";
+"general.abort" = "Abondonner les modifications";
+"general.oops" = "Oups";
+
+
+// MARK: - Home
+"home.title" = "Vos formulaires";
+"home.noRegistrations" = "\nIl semblerait que vous venez d'installer l'application. Clicquez sur le button en haut à droite pour commencer.";
+"home.networkError" = "\nIl est impossible de communiquer avec notre serveur de données. Assurez-vous d'être connecté à internet puis réessayer.\n\nVeuillez noter que les données actuelles peuvent être obselètes.";
+
+
+// MARK: - Illness Picker
+"illnessPicker.title" = "Choisir";
+
+
+// MARK: - Register
+"register.title" = "S'enregistrer";
+"register.name" = "Nom";
+"register.namePlaceholder" = "John Doe";
+"register.nameRequired" = "Le champ Nom is recquis";
+"register.insuranceID" = "Nº d'assuré(e)";
+"register.insuranceIDPlaceholder" = "Optionnel";
+"register.selectPainLevel" = "Veuillez sélectionner votre niveau de douleur";
+"register.done" = "S'enregistrer maintenant";
+"register.illness" = "Maladie";
+"register.painLevel" = "Niveau de douleur";
+"register.existingRegistration" = "Formulaire existant";
+"register.existingRegistrationMessage" = "\nUn formulaire pour la maladie %@ et l'utilisateur %@ a été trouvé. Voulez-vous le mettre à jout ?";
+
+
+// MARK: - Hospitals
+"hospitals.title" = "Hopitaux Suggérés";
+"hospitals.registration" = "Votre formulaire";
+"hospitals.waitingTime" = "Temps d'attente";
+"hospitals.distance" = "Distance";
+"hospitals.sortByWaitingTime" = "Trier par temps d'attente";
+"hospitals.sortByDistance" = "Trier par distance";
+"hospitals.userLocationMessage" = "\nL'accès à votre position a été désactivé, vous n'êtes pas en mesure de trier les hopitaux environnants par distance.\n\nPour ce faire veuillez activer l'accès à votre position via les réglages de votre appareil.";

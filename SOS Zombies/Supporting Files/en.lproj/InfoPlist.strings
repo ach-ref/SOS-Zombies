@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SOS Zombies
+
+  Created by Achref Marzouki on 22/4/21.
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "This will allow us to provide you information about the distance between you and your surrounding hospitals.";

@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  SOS Zombies
+
+  Created by Achref Marzouki on 21/4/21.
+  
+*/
+
+// MARK: - General
+"general.days" = "day(s)";
+"general.hours" = "hour(s)";
+"general.minutes" = "min(s)";
+"general.cancel" = "Cancel";
+"general.pastTime" = "%@ ago";
+"general.warning" = "Warning";
+"general.ok" = "OK";
+"general.dontShowAgain" = "Don't show again";
+"general.continue" = "Continue";
+"general.abort" = "Abort";
+"general.oops" = "Oops";
+
+
+// MARK: - Home
+"home.title" = "Registrations";
+"home.noRegistrations" = "\nIt seems you just installed the app, hit the add button on the top right of the screen to start.";
+"home.networkError" = "\nAn error occured while trying to connect to our server. Please make sure you are connected to internet and try again later.\n\nThe actual data might be outdated.";
+
+
+// MARK: - Illness Picker
+"illnessPicker.title" = "Select illness";
+
+
+// MARK: - Register
+"register.title" = "Register";
+"register.name" = "Name";
+"register.namePlaceholder" = "John Doe";
+"register.nameRequired" = "The name field is required";
+"register.insuranceID" = "Insurance ID";
+"register.insuranceIDPlaceholder" = "Optional";
+"register.selectPainLevel" = "Please select your pain level";
+"register.done" = "Register now";
+"register.illness" = "Illness";
+"register.painLevel" = "Pain level";
+"register.existingRegistration" = "Existing record found";
+"register.existingRegistrationMessage" = "\nAn exisiting registration for %@ for the user %@ is found. Would you like to update it ?";
+
+
+// MARK: - Hospitals
+"hospitals.title" = "Suggested Hospitals";
+"hospitals.registration" = "Registration";
+"hospitals.waitingTime" = "Waiting time";
+"hospitals.distance" = "Distance";
+"hospitals.sortByWaitingTime" = "Sort by waiting time";
+"hospitals.sortByDistance" = "Sort by distance";
+"hospitals.userLocationMessage" = "\nThe location access has been disabled, you will not be able to sort the surrounding hospitals by distance.\n\nPlease make sure to turn on location access from your device's Settings.";

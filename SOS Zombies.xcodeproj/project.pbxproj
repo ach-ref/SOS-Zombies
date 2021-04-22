@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B7D5C4298CDB6B1ECE62F2 /* Pods_SOS_ZombiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AF04D507F5FD9E5EEE8E1E /* Pods_SOS_ZombiesTests.framework */; };
+		1AE222540D99D9BDFC5DACEB /* Pods_SOS_Zombies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5EB053A31B4E9441BEEC78 /* Pods_SOS_Zombies.framework */; };
+		5C1061DC262FAA5500C75ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1061DB262FAA5500C75ECA /* AppDelegate.swift */; };
+		5C1061DE262FAA5500C75ECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1061DD262FAA5500C75ECA /* SceneDelegate.swift */; };
+		5C1061E0262FAA5500C75ECA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1061DF262FAA5500C75ECA /* HomeViewController.swift */; };
+		5C1061E6262FAA5500C75ECA /* SOS_Zombies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C1061E4262FAA5500C75ECA /* SOS_Zombies.xcdatamodeld */; };
+		5C1061E8262FAA5800C75ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1061E7262FAA5800C75ECA /* Assets.xcassets */; };
+		5C1061F6262FAA5800C75ECA /* SlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1061F5262FAA5800C75ECA /* SlowTests.swift */; };
+		5C106201262FAA5800C75ECA /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106200262FAA5800C75ECA /* UITests.swift */; };
+		5C106218262FADA700C75ECA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106217262FADA700C75ECA /* CoreDataManager.swift */; };
+		5C106238262FAFAC00C75ECA /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106237262FAFAC00C75ECA /* Routable.swift */; };
+		5C10624E262FB00B00C75ECA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10624D262FB00B00C75ECA /* Constants.swift */; };
+		5C106253262FB04600C75ECA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106252262FB04600C75ECA /* AppRouter.swift */; };
+		5C106259262FB14600C75ECA /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106258262FB14600C75ECA /* AppRepository.swift */; };
+		5C10625E262FB22E00C75ECA /* WSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10625D262FB22E00C75ECA /* WSManager.swift */; };
+		5C106264262FB50100C75ECA /* NSManagedComtext+AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106263262FB50100C75ECA /* NSManagedComtext+AddOn.swift */; };
+		5C106273262FC5A400C75ECA /* Illness+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10626B262FC5A400C75ECA /* Illness+CoreDataClass.swift */; };
+		5C106274262FC5A400C75ECA /* Illness+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10626C262FC5A400C75ECA /* Illness+CoreDataProperties.swift */; };
+		5C106277262FC5A400C75ECA /* Hospital+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10626F262FC5A400C75ECA /* Hospital+CoreDataClass.swift */; };
+		5C106278262FC5A400C75ECA /* Hospital+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106270262FC5A400C75ECA /* Hospital+CoreDataProperties.swift */; };
+		5C106294263033D500C75ECA /* QueueEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106292263033D500C75ECA /* QueueEntry+CoreDataClass.swift */; };
+		5C106295263033D500C75ECA /* QueueEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106293263033D500C75ECA /* QueueEntry+CoreDataProperties.swift */; };
+		5C19CF1226304BC700E1DED2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF1126304BC700E1DED2 /* RegisterViewController.swift */; };
+		5C19CF26263052BE00E1DED2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C19CF28263052BE00E1DED2 /* Localizable.strings */; };
+		5C19CF502630555B00E1DED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C19CF4E2630555B00E1DED2 /* LaunchScreen.storyboard */; };
+		5C19CF512630555B00E1DED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C19CF4F2630555B00E1DED2 /* Main.storyboard */; };
+		5C19CF56263058DE00E1DED2 /* UIView+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF55263058DE00E1DED2 /* UIView+Shake.swift */; };
+		5C19CF5B2630595A00E1DED2 /* String+Trimmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF5A2630595A00E1DED2 /* String+Trimmed.swift */; };
+		5C19CF632630DD4E00E1DED2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF5F2630DD4E00E1DED2 /* User+CoreDataClass.swift */; };
+		5C19CF642630DD4E00E1DED2 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF602630DD4E00E1DED2 /* User+CoreDataProperties.swift */; };
+		5C19CF652630DD4E00E1DED2 /* Registration+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF612630DD4E00E1DED2 /* Registration+CoreDataClass.swift */; };
+		5C19CF662630DD4E00E1DED2 /* Registration+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19CF622630DD4E00E1DED2 /* Registration+CoreDataProperties.swift */; };
+		5C26BA11263176BB00B25437 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C26BA10263176BB00B25437 /* UtilitiesTests.swift */; };
+		5C3BABCB263142A7002BD114 /* RegistrationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BABC9263142A7002BD114 /* RegistrationDetailTableViewCell.swift */; };
+		5C3BABCC263142A7002BD114 /* RegistrationDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BABCA263142A7002BD114 /* RegistrationDetailTableViewCell.xib */; };
+		5C3BABD8263151C8002BD114 /* RegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BABD6263151C8002BD114 /* RegistrationTableViewCell.swift */; };
+		5C3BABD9263151C8002BD114 /* RegistrationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BABD7263151C8002BD114 /* RegistrationTableViewCell.xib */; };
+		5CDF40B52630E5BE00AE9470 /* HospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF40B42630E5BE00AE9470 /* HospitalsViewController.swift */; };
+		5CDF40BB2630E67E00AE9470 /* HospitalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF40B92630E67E00AE9470 /* HospitalTableViewCell.swift */; };
+		5CDF40BC2630E67E00AE9470 /* HospitalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF40BA2630E67E00AE9470 /* HospitalTableViewCell.xib */; };
+		5CDF40C42630F04800AE9470 /* Int16+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF40C32630F04800AE9470 /* Int16+Time.swift */; };
+		5CDF40D0263102E200AE9470 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF40D2263102E200AE9470 /* InfoPlist.strings */; };
+		5CDF40DB263115D000AE9470 /* IllnessPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF40DA263115D000AE9470 /* IllnessPickerViewController.swift */; };
+		5CDF40E02631316100AE9470 /* Notification.Name+AddOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF40DF2631316100AE9470 /* Notification.Name+AddOn.swift */; };
+		5CEB3B852631616400700366 /* CoreDataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB3B842631616400700366 /* CoreDataManagerTest.swift */; };
+		5CEB3B8A2631701C00700366 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB3B892631701C00700366 /* NetworkMonitor.swift */; };
+		5CEB3B8F2631714200700366 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB3B8E2631714200700366 /* DataTests.swift */; };
+		F95421F6E88BBD5432F97234 /* Pods_SOS_Zombies_SOS_ZombiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F8B6D87207E6C4954D59EE /* Pods_SOS_Zombies_SOS_ZombiesUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C1061F2262FAA5800C75ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1061D0262FAA5500C75ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1061D7262FAA5500C75ECA;
+			remoteInfo = "Sydney Hospitals";
+		};
+		5C1061FD262FAA5800C75ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1061D0262FAA5500C75ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1061D7262FAA5500C75ECA;
+			remoteInfo = "Sydney Hospitals";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10707D2D3602BB1F193364CC /* Pods-SOS Zombies-SOS ZombiesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS Zombies-SOS ZombiesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SOS Zombies-SOS ZombiesUITests/Pods-SOS Zombies-SOS ZombiesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C63595E2079AC735E3554E9 /* Pods-Sydney Hospitals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney Hospitals.release.xcconfig"; path = "Target Support Files/Pods-Sydney Hospitals/Pods-Sydney Hospitals.release.xcconfig"; sourceTree = "<group>"; };
+		37AF04D507F5FD9E5EEE8E1E /* Pods_SOS_ZombiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_ZombiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8E6AB2AA39BBA97616C0BB /* Pods-SOS Zombies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS Zombies.release.xcconfig"; path = "Target Support Files/Pods-SOS Zombies/Pods-SOS Zombies.release.xcconfig"; sourceTree = "<group>"; };
+		3DDD53C07FCF65498C7A7DA4 /* Pods-Sydney Hospitals-Sydney HospitalsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney Hospitals-Sydney HospitalsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sydney Hospitals-Sydney HospitalsUITests/Pods-Sydney Hospitals-Sydney HospitalsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		402ED7E99B716374455EA49A /* Pods-SOS Zombies-SOS ZombiesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS Zombies-SOS ZombiesUITests.release.xcconfig"; path = "Target Support Files/Pods-SOS Zombies-SOS ZombiesUITests/Pods-SOS Zombies-SOS ZombiesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C1061D8262FAA5500C75ECA /* SOS Zombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOS Zombies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1061DB262FAA5500C75ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C1061DD262FAA5500C75ECA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5C1061DF262FAA5500C75ECA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C1061E5262FAA5500C75ECA /* Sydney_Hospitals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sydney_Hospitals.xcdatamodel; sourceTree = "<group>"; };
+		5C1061E7262FAA5800C75ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C1061EC262FAA5800C75ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1061F1262FAA5800C75ECA /* SOS ZombiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOS ZombiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1061F5262FAA5800C75ECA /* SlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowTests.swift; sourceTree = "<group>"; };
+		5C1061F7262FAA5800C75ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1061FC262FAA5800C75ECA /* SOS ZombiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOS ZombiesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C106200262FAA5800C75ECA /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		5C106202262FAA5800C75ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C106217262FADA700C75ECA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5C106237262FAFAC00C75ECA /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		5C10624D262FB00B00C75ECA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5C106252262FB04600C75ECA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5C106258262FB14600C75ECA /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		5C10625D262FB22E00C75ECA /* WSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSManager.swift; sourceTree = "<group>"; };
+		5C106263262FB50100C75ECA /* NSManagedComtext+AddOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedComtext+AddOn.swift"; sourceTree = "<group>"; };
+		5C10626B262FC5A400C75ECA /* Illness+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Illness+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C10626C262FC5A400C75ECA /* Illness+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Illness+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C10626F262FC5A400C75ECA /* Hospital+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hospital+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C106270262FC5A400C75ECA /* Hospital+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hospital+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C106292263033D500C75ECA /* QueueEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QueueEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C106293263033D500C75ECA /* QueueEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QueueEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C19CF1126304BC700E1DED2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5C19CF27263052BE00E1DED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5C19CF2C263052CD00E1DED2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5C19CF4E2630555B00E1DED2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C19CF4F2630555B00E1DED2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5C19CF55263058DE00E1DED2 /* UIView+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shake.swift"; sourceTree = "<group>"; };
+		5C19CF5A2630595A00E1DED2 /* String+Trimmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trimmed.swift"; sourceTree = "<group>"; };
+		5C19CF5F2630DD4E00E1DED2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C19CF602630DD4E00E1DED2 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C19CF612630DD4E00E1DED2 /* Registration+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registration+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C19CF622630DD4E00E1DED2 /* Registration+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registration+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C26BA10263176BB00B25437 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
+		5C3BABC9263142A7002BD114 /* RegistrationDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDetailTableViewCell.swift; sourceTree = "<group>"; };
+		5C3BABCA263142A7002BD114 /* RegistrationDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationDetailTableViewCell.xib; sourceTree = "<group>"; };
+		5C3BABD6263151C8002BD114 /* RegistrationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewCell.swift; sourceTree = "<group>"; };
+		5C3BABD7263151C8002BD114 /* RegistrationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationTableViewCell.xib; sourceTree = "<group>"; };
+		5CDF40B42630E5BE00AE9470 /* HospitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewController.swift; sourceTree = "<group>"; };
+		5CDF40B92630E67E00AE9470 /* HospitalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTableViewCell.swift; sourceTree = "<group>"; };
+		5CDF40BA2630E67E00AE9470 /* HospitalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalTableViewCell.xib; sourceTree = "<group>"; };
+		5CDF40C32630F04800AE9470 /* Int16+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int16+Time.swift"; sourceTree = "<group>"; };
+		5CDF40D1263102E200AE9470 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5CDF40D6263102E600AE9470 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5CDF40DA263115D000AE9470 /* IllnessPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessPickerViewController.swift; sourceTree = "<group>"; };
+		5CDF40DF2631316100AE9470 /* Notification.Name+AddOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+AddOn.swift"; sourceTree = "<group>"; };
+		5CEB3B842631616400700366 /* CoreDataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTest.swift; sourceTree = "<group>"; };
+		5CEB3B892631701C00700366 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		5CEB3B8E2631714200700366 /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		69CF8038429A999ED16E998B /* Pods-Sydney Hospitals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney Hospitals.debug.xcconfig"; path = "Target Support Files/Pods-Sydney Hospitals/Pods-Sydney Hospitals.debug.xcconfig"; sourceTree = "<group>"; };
+		98F8B6D87207E6C4954D59EE /* Pods_SOS_Zombies_SOS_ZombiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_Zombies_SOS_ZombiesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C6E2D5933EAB7F59C10B54 /* Pods-Sydney Hospitals-Sydney HospitalsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney Hospitals-Sydney HospitalsUITests.release.xcconfig"; path = "Target Support Files/Pods-Sydney Hospitals-Sydney HospitalsUITests/Pods-Sydney Hospitals-Sydney HospitalsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFEAAC7CEDB62B5D7343B451 /* Pods-Sydney HospitalsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney HospitalsTests.release.xcconfig"; path = "Target Support Files/Pods-Sydney HospitalsTests/Pods-Sydney HospitalsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C48B995BCEC71082F9F97DC3 /* Pods-SOS ZombiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS ZombiesTests.release.xcconfig"; path = "Target Support Files/Pods-SOS ZombiesTests/Pods-SOS ZombiesTests.release.xcconfig"; sourceTree = "<group>"; };
+		D177F1D8AFFBB9FEF083676D /* Pods-SOS ZombiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS ZombiesTests.debug.xcconfig"; path = "Target Support Files/Pods-SOS ZombiesTests/Pods-SOS ZombiesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6FED1614772FC1A74FA57A /* Pods-Sydney HospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sydney HospitalsTests.debug.xcconfig"; path = "Target Support Files/Pods-Sydney HospitalsTests/Pods-Sydney HospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC21265EBB84839B8E52FB5 /* Pods-SOS Zombies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOS Zombies.debug.xcconfig"; path = "Target Support Files/Pods-SOS Zombies/Pods-SOS Zombies.debug.xcconfig"; sourceTree = "<group>"; };
+		EA5EB053A31B4E9441BEEC78 /* Pods_SOS_Zombies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOS_Zombies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C1061D5262FAA5500C75ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE222540D99D9BDFC5DACEB /* Pods_SOS_Zombies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061EE262FAA5800C75ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B7D5C4298CDB6B1ECE62F2 /* Pods_SOS_ZombiesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061F9262FAA5800C75ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95421F6E88BBD5432F97234 /* Pods_SOS_Zombies_SOS_ZombiesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2477443E8DD57DF144B401F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA5EB053A31B4E9441BEEC78 /* Pods_SOS_Zombies.framework */,
+				98F8B6D87207E6C4954D59EE /* Pods_SOS_Zombies_SOS_ZombiesUITests.framework */,
+				37AF04D507F5FD9E5EEE8E1E /* Pods_SOS_ZombiesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1999FAC7E449A43A35C1AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69CF8038429A999ED16E998B /* Pods-Sydney Hospitals.debug.xcconfig */,
+				1C63595E2079AC735E3554E9 /* Pods-Sydney Hospitals.release.xcconfig */,
+				3DDD53C07FCF65498C7A7DA4 /* Pods-Sydney Hospitals-Sydney HospitalsUITests.debug.xcconfig */,
+				A4C6E2D5933EAB7F59C10B54 /* Pods-Sydney Hospitals-Sydney HospitalsUITests.release.xcconfig */,
+				DB6FED1614772FC1A74FA57A /* Pods-Sydney HospitalsTests.debug.xcconfig */,
+				BFEAAC7CEDB62B5D7343B451 /* Pods-Sydney HospitalsTests.release.xcconfig */,
+				DFC21265EBB84839B8E52FB5 /* Pods-SOS Zombies.debug.xcconfig */,
+				3A8E6AB2AA39BBA97616C0BB /* Pods-SOS Zombies.release.xcconfig */,
+				10707D2D3602BB1F193364CC /* Pods-SOS Zombies-SOS ZombiesUITests.debug.xcconfig */,
+				402ED7E99B716374455EA49A /* Pods-SOS Zombies-SOS ZombiesUITests.release.xcconfig */,
+				D177F1D8AFFBB9FEF083676D /* Pods-SOS ZombiesTests.debug.xcconfig */,
+				C48B995BCEC71082F9F97DC3 /* Pods-SOS ZombiesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C1061CF262FAA5500C75ECA = {
+			isa = PBXGroup;
+			children = (
+				5C1061DA262FAA5500C75ECA /* SOS Zombies */,
+				5C1061F4262FAA5800C75ECA /* SOS ZombiesTests */,
+				5C1061FF262FAA5800C75ECA /* SOS ZombiesUITests */,
+				5C1061D9262FAA5500C75ECA /* Products */,
+				4C1999FAC7E449A43A35C1AC /* Pods */,
+				2477443E8DD57DF144B401F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C1061D9262FAA5500C75ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C1061D8262FAA5500C75ECA /* SOS Zombies.app */,
+				5C1061F1262FAA5800C75ECA /* SOS ZombiesTests.xctest */,
+				5C1061FC262FAA5800C75ECA /* SOS ZombiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C1061DA262FAA5500C75ECA /* SOS Zombies */ = {
+			isa = PBXGroup;
+			children = (
+				5C1061DB262FAA5500C75ECA /* AppDelegate.swift */,
+				5C1061DD262FAA5500C75ECA /* SceneDelegate.swift */,
+				5C106217262FADA700C75ECA /* CoreDataManager.swift */,
+				5C106287262FE0A600C75ECA /* View */,
+				5C106257262FB12C00C75ECA /* Repository */,
+				5C10624C262FB00000C75ECA /* Util */,
+				5C106236262FAF8400C75ECA /* Network */,
+				5C19CF0D26304BB500E1DED2 /* Controller */,
+				5C106268262FC58700C75ECA /* Model */,
+				5C19CF09263044A100E1DED2 /* Storyboard */,
+				5C19CF162630520E00E1DED2 /* Resources */,
+				5C19CF1A2630525000E1DED2 /* Supporting Files */,
+			);
+			path = "SOS Zombies";
+			sourceTree = "<group>";
+		};
+		5C1061F4262FAA5800C75ECA /* SOS ZombiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CEB3B842631616400700366 /* CoreDataManagerTest.swift */,
+				5C26BA10263176BB00B25437 /* UtilitiesTests.swift */,
+				5C1061F5262FAA5800C75ECA /* SlowTests.swift */,
+				5CEB3B8E2631714200700366 /* DataTests.swift */,
+				5C1061F7262FAA5800C75ECA /* Info.plist */,
+			);
+			path = "SOS ZombiesTests";
+			sourceTree = "<group>";
+		};
+		5C1061FF262FAA5800C75ECA /* SOS ZombiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C106200262FAA5800C75ECA /* UITests.swift */,
+				5C106202262FAA5800C75ECA /* Info.plist */,
+			);
+			path = "SOS ZombiesUITests";
+			sourceTree = "<group>";
+		};
+		5C106236262FAF8400C75ECA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5C106237262FAFAC00C75ECA /* Routable.swift */,
+				5C106252262FB04600C75ECA /* AppRouter.swift */,
+				5C10625D262FB22E00C75ECA /* WSManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5C10624C262FB00000C75ECA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5C106262262FB4EE00C75ECA /* Extensions */,
+				5C10624D262FB00B00C75ECA /* Constants.swift */,
+				5CEB3B892631701C00700366 /* NetworkMonitor.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5C106257262FB12C00C75ECA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5C106258262FB14600C75ECA /* AppRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5C106262262FB4EE00C75ECA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C106263262FB50100C75ECA /* NSManagedComtext+AddOn.swift */,
+				5C19CF55263058DE00E1DED2 /* UIView+Shake.swift */,
+				5C19CF5A2630595A00E1DED2 /* String+Trimmed.swift */,
+				5CDF40C32630F04800AE9470 /* Int16+Time.swift */,
+				5CDF40DF2631316100AE9470 /* Notification.Name+AddOn.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C106268262FC58700C75ECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C19CF5F2630DD4E00E1DED2 /* User+CoreDataClass.swift */,
+				5C19CF602630DD4E00E1DED2 /* User+CoreDataProperties.swift */,
+				5C19CF612630DD4E00E1DED2 /* Registration+CoreDataClass.swift */,
+				5C19CF622630DD4E00E1DED2 /* Registration+CoreDataProperties.swift */,
+				5C106292263033D500C75ECA /* QueueEntry+CoreDataClass.swift */,
+				5C106293263033D500C75ECA /* QueueEntry+CoreDataProperties.swift */,
+				5C10626B262FC5A400C75ECA /* Illness+CoreDataClass.swift */,
+				5C10626C262FC5A400C75ECA /* Illness+CoreDataProperties.swift */,
+				5C10626F262FC5A400C75ECA /* Hospital+CoreDataClass.swift */,
+				5C106270262FC5A400C75ECA /* Hospital+CoreDataProperties.swift */,
+				5C1061E4262FAA5500C75ECA /* SOS_Zombies.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C106287262FE0A600C75ECA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF40B92630E67E00AE9470 /* HospitalTableViewCell.swift */,
+				5CDF40BA2630E67E00AE9470 /* HospitalTableViewCell.xib */,
+				5C3BABC9263142A7002BD114 /* RegistrationDetailTableViewCell.swift */,
+				5C3BABCA263142A7002BD114 /* RegistrationDetailTableViewCell.xib */,
+				5C3BABD6263151C8002BD114 /* RegistrationTableViewCell.swift */,
+				5C3BABD7263151C8002BD114 /* RegistrationTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C19CF09263044A100E1DED2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C19CF4E2630555B00E1DED2 /* LaunchScreen.storyboard */,
+				5C19CF4F2630555B00E1DED2 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C19CF0D26304BB500E1DED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C1061DF262FAA5500C75ECA /* HomeViewController.swift */,
+				5CDF40DA263115D000AE9470 /* IllnessPickerViewController.swift */,
+				5C19CF1126304BC700E1DED2 /* RegisterViewController.swift */,
+				5CDF40B42630E5BE00AE9470 /* HospitalsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C19CF162630520E00E1DED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C1061E7262FAA5800C75ECA /* Assets.xcassets */,
+				5C1061EC262FAA5800C75ECA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C19CF1A2630525000E1DED2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C19CF28263052BE00E1DED2 /* Localizable.strings */,
+				5CDF40D2263102E200AE9470 /* InfoPlist.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C1061D7262FAA5500C75ECA /* SOS Zombies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C106205262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS Zombies" */;
+			buildPhases = (
+				56B388DA7EAE29C31B7BEC3D /* [CP] Check Pods Manifest.lock */,
+				5C1061D4262FAA5500C75ECA /* Sources */,
+				5C1061D5262FAA5500C75ECA /* Frameworks */,
+				5C1061D6262FAA5500C75ECA /* Resources */,
+				59F18BBF58CB866C0E259317 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SOS Zombies";
+			productName = "Sydney Hospitals";
+			productReference = 5C1061D8262FAA5500C75ECA /* SOS Zombies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C1061F0262FAA5800C75ECA /* SOS ZombiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C106208262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS ZombiesTests" */;
+			buildPhases = (
+				394030E232CEA21A07448BDB /* [CP] Check Pods Manifest.lock */,
+				5C1061ED262FAA5800C75ECA /* Sources */,
+				5C1061EE262FAA5800C75ECA /* Frameworks */,
+				5C1061EF262FAA5800C75ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C1061F3262FAA5800C75ECA /* PBXTargetDependency */,
+			);
+			name = "SOS ZombiesTests";
+			productName = "Sydney HospitalsTests";
+			productReference = 5C1061F1262FAA5800C75ECA /* SOS ZombiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C1061FB262FAA5800C75ECA /* SOS ZombiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C10620B262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS ZombiesUITests" */;
+			buildPhases = (
+				29BB547DE35DEB23F5053431 /* [CP] Check Pods Manifest.lock */,
+				5C1061F8262FAA5800C75ECA /* Sources */,
+				5C1061F9262FAA5800C75ECA /* Frameworks */,
+				5C1061FA262FAA5800C75ECA /* Resources */,
+				82277ED93477B36EBAD1EC04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C1061FE262FAA5800C75ECA /* PBXTargetDependency */,
+			);
+			name = "SOS ZombiesUITests";
+			productName = "Sydney HospitalsUITests";
+			productReference = 5C1061FC262FAA5800C75ECA /* SOS ZombiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C1061D0262FAA5500C75ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5C1061D7262FAA5500C75ECA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5C1061F0262FAA5800C75ECA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5C1061D7262FAA5500C75ECA;
+					};
+					5C1061FB262FAA5800C75ECA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5C1061D7262FAA5500C75ECA;
+					};
+				};
+			};
+			buildConfigurationList = 5C1061D3262FAA5500C75ECA /* Build configuration list for PBXProject "SOS Zombies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 5C1061CF262FAA5500C75ECA;
+			productRefGroup = 5C1061D9262FAA5500C75ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C1061D7262FAA5500C75ECA /* SOS Zombies */,
+				5C1061F0262FAA5800C75ECA /* SOS ZombiesTests */,
+				5C1061FB262FAA5800C75ECA /* SOS ZombiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C1061D6262FAA5500C75ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C19CF502630555B00E1DED2 /* LaunchScreen.storyboard in Resources */,
+				5CDF40D0263102E200AE9470 /* InfoPlist.strings in Resources */,
+				5C19CF26263052BE00E1DED2 /* Localizable.strings in Resources */,
+				5C1061E8262FAA5800C75ECA /* Assets.xcassets in Resources */,
+				5C3BABD9263151C8002BD114 /* RegistrationTableViewCell.xib in Resources */,
+				5CDF40BC2630E67E00AE9470 /* HospitalTableViewCell.xib in Resources */,
+				5C3BABCC263142A7002BD114 /* RegistrationDetailTableViewCell.xib in Resources */,
+				5C19CF512630555B00E1DED2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061EF262FAA5800C75ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061FA262FAA5800C75ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29BB547DE35DEB23F5053431 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOS Zombies-SOS ZombiesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		394030E232CEA21A07448BDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOS ZombiesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B388DA7EAE29C31B7BEC3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOS Zombies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59F18BBF58CB866C0E259317 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies/Pods-SOS Zombies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies/Pods-SOS Zombies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies/Pods-SOS Zombies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82277ED93477B36EBAD1EC04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies-SOS ZombiesUITests/Pods-SOS Zombies-SOS ZombiesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies-SOS ZombiesUITests/Pods-SOS Zombies-SOS ZombiesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOS Zombies-SOS ZombiesUITests/Pods-SOS Zombies-SOS ZombiesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C1061D4262FAA5500C75ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDF40E02631316100AE9470 /* Notification.Name+AddOn.swift in Sources */,
+				5CEB3B8A2631701C00700366 /* NetworkMonitor.swift in Sources */,
+				5C19CF652630DD4E00E1DED2 /* Registration+CoreDataClass.swift in Sources */,
+				5CDF40BB2630E67E00AE9470 /* HospitalTableViewCell.swift in Sources */,
+				5C106294263033D500C75ECA /* QueueEntry+CoreDataClass.swift in Sources */,
+				5C19CF642630DD4E00E1DED2 /* User+CoreDataProperties.swift in Sources */,
+				5C1061E0262FAA5500C75ECA /* HomeViewController.swift in Sources */,
+				5C19CF56263058DE00E1DED2 /* UIView+Shake.swift in Sources */,
+				5C106238262FAFAC00C75ECA /* Routable.swift in Sources */,
+				5C1061DC262FAA5500C75ECA /* AppDelegate.swift in Sources */,
+				5C19CF632630DD4E00E1DED2 /* User+CoreDataClass.swift in Sources */,
+				5C106277262FC5A400C75ECA /* Hospital+CoreDataClass.swift in Sources */,
+				5C106278262FC5A400C75ECA /* Hospital+CoreDataProperties.swift in Sources */,
+				5C106274262FC5A400C75ECA /* Illness+CoreDataProperties.swift in Sources */,
+				5C3BABD8263151C8002BD114 /* RegistrationTableViewCell.swift in Sources */,
+				5C1061DE262FAA5500C75ECA /* SceneDelegate.swift in Sources */,
+				5C19CF662630DD4E00E1DED2 /* Registration+CoreDataProperties.swift in Sources */,
+				5C106273262FC5A400C75ECA /* Illness+CoreDataClass.swift in Sources */,
+				5C19CF1226304BC700E1DED2 /* RegisterViewController.swift in Sources */,
+				5C106295263033D500C75ECA /* QueueEntry+CoreDataProperties.swift in Sources */,
+				5CDF40B52630E5BE00AE9470 /* HospitalsViewController.swift in Sources */,
+				5C106253262FB04600C75ECA /* AppRouter.swift in Sources */,
+				5C10625E262FB22E00C75ECA /* WSManager.swift in Sources */,
+				5C10624E262FB00B00C75ECA /* Constants.swift in Sources */,
+				5CDF40DB263115D000AE9470 /* IllnessPickerViewController.swift in Sources */,
+				5C106218262FADA700C75ECA /* CoreDataManager.swift in Sources */,
+				5C106259262FB14600C75ECA /* AppRepository.swift in Sources */,
+				5C1061E6262FAA5500C75ECA /* SOS_Zombies.xcdatamodeld in Sources */,
+				5C106264262FB50100C75ECA /* NSManagedComtext+AddOn.swift in Sources */,
+				5CDF40C42630F04800AE9470 /* Int16+Time.swift in Sources */,
+				5C3BABCB263142A7002BD114 /* RegistrationDetailTableViewCell.swift in Sources */,
+				5C19CF5B2630595A00E1DED2 /* String+Trimmed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061ED262FAA5800C75ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C26BA11263176BB00B25437 /* UtilitiesTests.swift in Sources */,
+				5CEB3B852631616400700366 /* CoreDataManagerTest.swift in Sources */,
+				5CEB3B8F2631714200700366 /* DataTests.swift in Sources */,
+				5C1061F6262FAA5800C75ECA /* SlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1061F8262FAA5800C75ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C106201262FAA5800C75ECA /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C1061F3262FAA5800C75ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C1061D7262FAA5500C75ECA /* SOS Zombies */;
+			targetProxy = 5C1061F2262FAA5800C75ECA /* PBXContainerItemProxy */;
+		};
+		5C1061FE262FAA5800C75ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C1061D7262FAA5500C75ECA /* SOS Zombies */;
+			targetProxy = 5C1061FD262FAA5800C75ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C19CF28263052BE00E1DED2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C19CF27263052BE00E1DED2 /* en */,
+				5C19CF2C263052CD00E1DED2 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5CDF40D2263102E200AE9470 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDF40D1263102E200AE9470 /* en */,
+				5CDF40D6263102E600AE9470 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C106203262FAA5800C75ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C106204262FAA5800C75ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C106206262FAA5800C75ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC21265EBB84839B8E52FB5 /* Pods-SOS Zombies.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "$(SRCROOT)/SOS Zombies/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.SOS-Zombies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C106207262FAA5800C75ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8E6AB2AA39BBA97616C0BB /* Pods-SOS Zombies.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "$(SRCROOT)/SOS Zombies/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.SOS-Zombies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C106209262FAA5800C75ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D177F1D8AFFBB9FEF083676D /* Pods-SOS ZombiesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "SOS ZombiesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.Sydney-HospitalsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOS Zombies.app/SOS Zombies";
+			};
+			name = Debug;
+		};
+		5C10620A262FAA5800C75ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C48B995BCEC71082F9F97DC3 /* Pods-SOS ZombiesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "SOS ZombiesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.Sydney-HospitalsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOS Zombies.app/SOS Zombies";
+			};
+			name = Release;
+		};
+		5C10620C262FAA5800C75ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10707D2D3602BB1F193364CC /* Pods-SOS Zombies-SOS ZombiesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "SOS ZombiesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.Sydney-HospitalsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SOS Zombies";
+			};
+			name = Debug;
+		};
+		5C10620D262FAA5800C75ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402ED7E99B716374455EA49A /* Pods-SOS Zombies-SOS ZombiesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C4D9338E4J;
+				INFOPLIST_FILE = "SOS ZombiesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amarzouki.Sydney-HospitalsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SOS Zombies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C1061D3262FAA5500C75ECA /* Build configuration list for PBXProject "SOS Zombies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C106203262FAA5800C75ECA /* Debug */,
+				5C106204262FAA5800C75ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C106205262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS Zombies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C106206262FAA5800C75ECA /* Debug */,
+				5C106207262FAA5800C75ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C106208262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS ZombiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C106209262FAA5800C75ECA /* Debug */,
+				5C10620A262FAA5800C75ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C10620B262FAA5800C75ECA /* Build configuration list for PBXNativeTarget "SOS ZombiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C10620C262FAA5800C75ECA /* Debug */,
+				5C10620D262FAA5800C75ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C1061E4262FAA5500C75ECA /* SOS_Zombies.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C1061E5262FAA5500C75ECA /* Sydney_Hospitals.xcdatamodel */,
+			);
+			currentVersion = 5C1061E5262FAA5500C75ECA /* Sydney_Hospitals.xcdatamodel */;
+			path = SOS_Zombies.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5C1061D0262FAA5500C75ECA /* Project object */;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="HospitalTableViewCell" customModule="Sydney_Hospitals" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-ik-7Dy" userLabel="ContainerView">
+                        <rect key="frame" x="20" y="29.5" width="280" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-or-kEj">
+                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTk-wi-eld">
+                                <rect key="frame" x="33" y="20.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="Primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22v-6g-HHz">
+                                <rect key="frame" x="0.0" y="20.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0w-TT-ECA">
+                                <rect key="frame" x="249" y="4.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x0w-TT-ECA" secondAttribute="trailing" id="BT8-PP-tDh"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jTk-wi-eld" secondAttribute="trailing" id="Kvn-Nz-Qmj"/>
+                            <constraint firstItem="22v-6g-HHz" firstAttribute="top" secondItem="aIu-or-kEj" secondAttribute="bottom" id="MPF-Yr-B7J"/>
+                            <constraint firstItem="x0w-TT-ECA" firstAttribute="firstBaseline" secondItem="aIu-or-kEj" secondAttribute="firstBaseline" id="NI1-MM-kij"/>
+                            <constraint firstItem="jTk-wi-eld" firstAttribute="firstBaseline" secondItem="22v-6g-HHz" secondAttribute="firstBaseline" id="WoO-42-5G1"/>
+                            <constraint firstAttribute="bottom" secondItem="22v-6g-HHz" secondAttribute="bottom" id="blg-LW-cyr"/>
+                            <constraint firstItem="x0w-TT-ECA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aIu-or-kEj" secondAttribute="trailing" constant="16" id="caR-dS-rPG"/>
+                            <constraint firstItem="aIu-or-kEj" firstAttribute="leading" secondItem="2wt-ik-7Dy" secondAttribute="leading" id="cbx-U1-fPp"/>
+                            <constraint firstItem="22v-6g-HHz" firstAttribute="leading" secondItem="2wt-ik-7Dy" secondAttribute="leading" id="kOl-KC-qTP"/>
+                            <constraint firstItem="aIu-or-kEj" firstAttribute="top" secondItem="2wt-ik-7Dy" secondAttribute="top" id="s2d-ag-5sE"/>
+                            <constraint firstItem="jTk-wi-eld" firstAttribute="leading" secondItem="22v-6g-HHz" secondAttribute="trailing" constant="2" id="uf5-Rx-Fie"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2wt-ik-7Dy" secondAttribute="trailing" constant="20" id="9Pl-r1-Agh"/>
+                    <constraint firstItem="2wt-ik-7Dy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RZT-CN-f83"/>
+                    <constraint firstItem="2wt-ik-7Dy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XIy-A3-MYL"/>
+                    <constraint firstItem="2wt-ik-7Dy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gqH-TN-hlD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="distanceValueLabel" destination="x0w-TT-ECA" id="OUp-Sw-DwV"/>
+                <outlet property="hospitalNameLabel" destination="aIu-or-kEj" id="Eaq-0n-wpT"/>
+                <outlet property="waitingTimeLabel" destination="22v-6g-HHz" id="HJe-lP-rBq"/>
+                <outlet property="waitingTimeValueLabel" destination="jTk-wi-eld" id="KVW-G5-YMu"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Primary">
+            <color red="0.93725490196078431" green="0.50196078431372548" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

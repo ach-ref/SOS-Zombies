@@ -1,0 +1,6 @@
+framework module Pods_SOS_ZombiesTests {
+  umbrella header "Pods-SOS ZombiesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
